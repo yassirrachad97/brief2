@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+   
+header{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 100px;
+    align-items: center;
+    
+    
+}
+.nav{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+.links{
+    display: flex;
+    gap: 20px;
+}
+.title-logo{
+    font-size: 2rem;
+    color: #A18A68;
+    font-family: 'Allerta Stencil', sans-serif;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.partie-détaille{
+    width: 90%;
+    margin: 0% auto;
+    display: flex;
+}
+.nom-produit{
+    width: 85%;
+    margin-top: 120px;
+}
+.titre{
+    margin: auto;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.titre p{
+    color: #A18A68;
+    font-size: 30px;
+    padding: 5px;
+}
+.titre span{
+    font-size: xx-large;
+}
+.quantity {
+    width: 30%;
+    margin-top: 100px;
+    margin-left: 100px;
+    background-color: rgba(41, 97, 97, 0.094);
+    padding: 13px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.quantity span:nth-child(1), span:nth-child(3) {
+    font-size: x-large;
+    padding: 10px;
+    border-radius: 50%;
+    font-weight: bold;
+    background-color: rgba(62, 94, 78, 0.799);
+}
+.quantity span:nth-child(2){
+    height: 20px;
+    font-size: large;
+}
+.rating{
+    padding: 40px;
+    margin-left: 60px;
+    
+}
+.heroImage{
+    width: 800px;
+    height: 550px;
+}
+
+.button1{
+    width: 200px;
+    height: 39px;
+    border-radius: 40px;
+    margin-left: 100px;
+    background-color: rgba(201, 115, 131, 0.514);
+    
+}
+
+.descripton {
+    margin: 5px 75px ;
+}
+.descripton h2{
+    font-size: xx-large;
+
+}
+
+.descripton p {
+    word-break: break-all;
+    width: 90%;
+    font-size: larger;
+    padding : 15px 0px 10px 15px;
+}
+
+.reviews {
+    /* border: 2px solid red; */
+    padding: 30px 0px;
+    margin: 30px 75px;
+}
+.reviews div {
+    display: flex;
+    margin: 10px;
+    /* border: 2px solid red; */
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+}
+.profile img {
+    width: 200px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.profile span{
+    text-align: center;
+    margin-top: 10px;
+}
+.reviews p {
+    margin: auto;
+    padding: 0px 120px 0px 15px;
+    font-size: larger;
+    letter-spacing: 0vh;
+    line-height: 28px;
+}
+.reviews h2 {
+    font-size: xx-large;
+}
