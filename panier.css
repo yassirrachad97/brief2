@@ -16,10 +16,9 @@ header{
     
 }
 .nav{
-    width: 90%;
+    width: 85%;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 60px;
 }
 .links{
     display: flex;
@@ -35,123 +34,108 @@ a{
     text-decoration: none;
     color: black;
 }
-.partie-détaille{
-    width: 90%;
-    margin: 0% auto;
+.nomPanier{
+    width: 80%;
+    height: 60px;
+    margin: 10px 40px 10px 140px;
+}
+.nomPanier h1{
+    width: 100%;
+    width: 100%;
+    font-size: xx-large;
     display: flex;
+    justify-content: center;
 }
-.nom-produit{
-    width: 85%;
-    margin-top: 120px;
+.produit{
+    width: 80%;
+    height: 400px;
+    display: flex;
+    margin: 60px 40px 60px 270px;
+    
 }
-.titre{
-    margin: auto;
-    width: 85%;
+
+.carats{
+    width: 70%;
+    height: 100%;
+    display: flex;
+
+   
+}
+.carats .nom{
+    width: 30%;
+    height: 20%;
+    margin: 100px 19px 0px 60px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
 }
-.titre p{
+.carats .nom p{
     color: #A18A68;
-    font-size: 30px;
-    padding: 5px;
 }
-.titre span{
+.quantité{
+    width: 60px;
+    height: 10%; 
+    margin: 240px 19px 0px 60px; 
+    font-size: x-large;
+    font-weight: bold;
+}
+.quantité span:nth-child(2){
+    border:  #000;
+    background-color: #444;
+    font-size: xx-large;
+
+}
+.total{
+    width: 30%;
+    height: 20%; 
+    margin: 316px 10px 0px -405px; 
+    display: flex;
+    justify-content: space-between;
+}
+.total span:nth-child(1){
+    font-size: xx-large;
+    font-weight: bold;
+
+}
+.total span:nth-child(2){
+    color: #A18A68;
     font-size: xx-large;
 }
-.quantity {
+.achat{
+    width: 80%;
+    height: 200px;
+    margin: 27px 17px 45px 148px;
+}
+.prixTotal{
     width: 30%;
-    margin-top: 100px;
-    margin-left: 100px;
-    background-color: rgba(41, 97, 97, 0.094);
-    padding: 13px;
-    border-radius: 30px;
+    height: 40%;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    margin: 17px 10px 10px 400px;
 }
-.quantity span:nth-child(1), span:nth-child(3) {
-    font-size: x-large;
-    padding: 10px;
-    border-radius: 50%;
+.prixTotal span:nth-child(1){
+    font-size: xx-large;
     font-weight: bold;
-    background-color: rgba(62, 94, 78, 0.799);
-}
-.quantity span:nth-child(2){
-    height: 20px;
-    font-size: large;
-}
-.rating{
-    padding: 40px;
-    margin-left: 60px;
-    
-}
-.heroImage{
-    width: 800px;
-    height: 550px;
-}
 
+}
+.prixTotal span:nth-child(2){
+    color: #A18A68;
+    font-size: xx-large;
+    font-weight: bold;
+
+}
 .button1{
     width: 200px;
     height: 39px;
     border-radius: 40px;
     border: 3px solid;
-    margin-left: 100px;
+    margin: 17px 10px 10px 490px;
     background-color: rgba(201, 115, 131, 0.514);
-    
 }
 
-.descripton {
-    margin: 5px 75px ;
-}
-.descripton h2{
-    font-size: xx-large;
 
-}
 
-.descripton p {
-    word-break: break-all;
-    width: 90%;
-    font-size: larger;
-    padding : 15px 0px 10px 15px;
-}
-
-.reviews {
-    /* border: 2px solid red; */
-    padding: 30px 0px;
-    margin: 30px 75px;
-}
-.reviews div {
-    display: flex;
-    margin: 10px;
-    /* border: 2px solid red; */
-}
-
-.profile {
-    display: flex;
-    flex-direction: column;
-}
-.profile img {
-    width: 200px;
-    height: 150px;
-    border-radius: 50%;
-    margin-top: 20px;
-}
-.profile span{
-    text-align: center;
-    margin-top: 10px;
-}
-.reviews p {
-    margin: auto;
-    padding: 0px 120px 0px 15px;
-    font-size: larger;
-    letter-spacing: 0vh;
-    line-height: 28px;
-}
-.reviews h2 {
-    font-size: xx-large;
-}
 .footer-content{
     margin: 0% auto;
     width: 1248px;
@@ -160,7 +144,6 @@ a{
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    
     border-top: 1px solid #000;
     position: relative;
 }
