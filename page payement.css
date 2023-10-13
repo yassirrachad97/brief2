@@ -5,12 +5,13 @@
     scroll-behavior: smooth;
 }
 
+
    
 header{
     display: flex;
     width: 100%;
+    height: 100%;
     justify-content: center;
-    height: 100px;
     align-items: center;
     
     
@@ -49,32 +50,36 @@ a{
 .combinaison{
    
     width: 85%;
-    height: 1822px;
+    height: 1200px;
     display: flex;
     margin: 10px 40px 10px 140px;
 }
 .livraison{
  
     width: 50%;
-    height: 100%; 
+    height: 60%; 
    
 }
 form{
-    width: 70%;
-    height: 200px;
-    display: flex;
-    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+     display: flex; 
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
-    gap: 30;
+    gap:80px;
     line-height: 40;
+    
 
 }
 form input{
+    width: 541px;
+    height: 91px;
     padding: 10px 5px;
     border-radius: 8px;
 }
 .btn1{
-    
+    width: 70%;
     display: flex;
     justify-content: space-evenly;
 }
@@ -88,20 +93,96 @@ form input{
 .trois-produit{
    
     width: 50%;
-    height: 100%; 
+    height: 70%; 
+    margin-top: 70px;
+    flex-direction: column;
+    gap:20px;
+    
 }
 .chaqueProduit{
     width: 100%;
-    height: 35%; 
+    height: 20%; 
+    display:flex ;
+    gap: 100px;
 
 }
-.img{
-    width: 10px;
-    height: 10px;
+.nomQTé{
+    margin-top: 20px;
+    width: 30%;
+    height: 80%;
+    display: grid;
+    justify-content: space-between;
+}
+.nomQTé h3{
+    font-size: x-large;
+    font-weight: bold;
+}
+.prixTota{
+    margin-top: 20px;
+    width: 30%;
+    height: 80%;
+    display: grid;
+    justify-content: space-between;
     
 }
-
-
+.prixTota p{
+    color: #A18A68;
+    font-size: xx-large;
+}
+    
+.factureBtn{
+    width: 80%;
+    height: 200px;
+    display: flex;
+    margin:-300px 28px 20px 153px;
+}
+.achtBTN{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.achtBTN button{
+    width: 331px;
+    height: 71px;
+    border-radius: 40px;
+    background-color: rgba(174, 169, 170, 0.514);
+}
+.FACTURE{
+    width:50%;
+    height: 100%;
+    flex-direction: column;
+    
+}
+.PrxNet{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.PrxNet p{
+    font-size: x-large;
+}
+.PrxLiv{
+    width: 100%;
+    height: 20%; 
+    display: flex;
+    justify-content: space-evenly;
+}
+.PrxLiv p{
+    font-size: large;
+}
+.PrxBrt{
+    width: 100%;
+    height: 20%; 
+    display: flex;
+    justify-content: space-evenly;
+}
+.PrxBrt p{
+    font-size: xx-large;
+    font-weight: bold;
+}
 .footer-content{
     margin: 0% auto;
     width: 1248px;
