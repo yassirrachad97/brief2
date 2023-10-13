@@ -47,24 +47,50 @@ a{
     justify-content: center;
 }
 .combinaison{
-    border: 2px solid red;
+   
     width: 85%;
     height: 1822px;
     display: flex;
     margin: 10px 40px 10px 140px;
 }
 .livraison{
-    border: 2px solid blue;
+ 
     width: 50%;
     height: 100%; 
+   
+}
+form{
+    width: 70%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 30;
+    line-height: 40;
+
+}
+form input{
+    padding: 10px 5px;
+    border-radius: 8px;
+}
+.btn1{
+    
+    display: flex;
+    justify-content: space-evenly;
+}
+.btn1 button{
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    font-size: large;
 }
 .trois-produit{
-    border: 2px solid #A18A68;
+   
     width: 50%;
     height: 100%; 
 }
 .chaqueProduit{
-    border: 2px solid #A18A68;
     width: 100%;
     height: 35%; 
 
