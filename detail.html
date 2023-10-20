@@ -16,27 +16,31 @@
 <body>
     <header>
         <div class="nav">
-            <div class="logo">
-                <span class="title-logo">You<span style="color: #686AA1;">Shop</span></span>
-            </div>
-            <div class="links">
-                <a href="#">blog</a>
-                <a href="#">shop</a>
-                <a href="#">our story</a>
-                <p>|</p>
-                <a href="#"><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></a>
-                <a href="#"><i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></a>
-                <a href="#"><i class="fa-regular fa-user" style="color: #000000;"></i></a>
-            </div>
+           <div class="logo">
+              <span class="title-logo">You<span style="color: #686AA1;">Shop</span></span>
+           </div>
+           <a href="#" class="menu-btn">
+              <span class="bar"></span>
+              <span class="bar"></span>
+               <span class="bar"></span>
+           </a>
+           <div class="links">
+              <a href="#">blog</a>
+              <a href="#">shop</a>
+              <a href="#">our story</a>
+              <p>|</p>
+              <a href="#"><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></a>
+              <a href="page panier.html"><i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></a>
+              <a href="#"><i class="fa-regular fa-user" style="color: #000000;"></i></a>
+           </div>
         </div>
-    </header>
+     </header>
+  
 
 
     <main>
         <div class="partie-détaille">
-            <div>
                 <img class="heroImage" src="images/2.png" alt="Hal-Earrings">
-            </div>
             <div class="nom-produit">
                 <div class="titre">
                     <span>Hal Earrings </span>
@@ -45,11 +49,12 @@
                 <div class="rating">
                     <img src="images/rating.jpg" alt="rating" width="120px" height="40px">
                 </div>
-                <div>
+                <div class="botunesG">
                     <button class="button1"><a href="page panier.html">Ajouiter au panier</a></button>
-                </div>
+            
                 <div class="quantity">
                     <span>-</span> <span> Quantité </span> <span>+</span>
+                </div>
                 </div>
             </div>
 
@@ -66,7 +71,7 @@
         </div>
         <div class="reviews">
             <h2>Commentaire</h2>
-            <div>
+            <div class="ProfCommit">
                 <div class="profile"><img src="./images/profile1.png" alt=""> <span>Hassan hazim</span></div>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione corporis, dicta nobis unde quidem
@@ -76,7 +81,7 @@
                 </p>
             </div>
             <hr>
-            <div>
+            <div class="ProfCommit">
                 <div class="profile"><img src="./images/profile2.jpg" alt=""> <span>Mariem yassine</span></div>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione corporis, dicta nobis unde quidem
@@ -86,37 +91,51 @@
                 </p>
             </div>
         </div>
+        </main>
         <footer class="footer-content">
             <div class="box-content">
-                <div class="user-contact">
-                    <p><a href="#" class="contact">Contact</a></p>
-                    <p><a href="#" class="contact">TERMS OF SERVICES</a></p>
-                    <p><a href="#" class="contact">SHIPPING AND RETURNS</a></p>
-                </div>
-                <ul>
-                    <li><a href="#" class="contact">Give an email, get the
-                            newsletter.</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<svg
-                            xmlns="http://www.w3.org/2000/svg" height="0.875em"
-                            viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com/ License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                            <style>
-                                svg {
-                                    fill: #707070
-                                }
-                            </style>
-                            <path
-                                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
-                        </svg></li>
-
-                </ul>
+               <div class="user-contact">
+                  <p><a href="#" class="contact">Contact</a></p>
+                  <p><a href="#" class="contact">TERMS OF SERVICES</a></p>
+                  <p><a href="#" class="contact">SHIPPING AND RETURNS</a></p>
+               </div>
+               <div>
+                  <div style="border-bottom: 1px solid black;margin-top: 4rem;padding-bottom: 9px;">
+                     <a href="#" class="contact">Give an email, get the
+                        newsletter.</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                        <svg class="svg-arrow"
+                        xmlns="http://www.w3.org/2000/svg" height="0.875em"
+                        viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com/ License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <style>
+                           svg {
+                              fill: #707070
+                           }
+                        </style>
+                        <path
+                           d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                     </svg>
+                  </div>
+                  
+                     <div class="icones">
+                        <img src="images/Icon color.png" alt="linkdin">
+                        <img src="images/Icon color (1).png" alt="facebook">
+                        <img src="images/Icon color (2).png" alt="instagram">
+                        <img src="images/Icon color (3).png" alt="twitre">
+                     </div>
+      
+               </div>
             </div>
-            <div class="icones">
-                <img src="images/Icon color.png" alt="linkdin">
-                <img src="images/Icon color (1).png" alt="facebook">
-                <img src="images/Icon color (2).png" alt="instagram">
-                <img src="images/Icon color (3).png" alt="twitre">
-
-            </div>
-        </footer>
+            
+      
+      
+      
+      
+      
+      
+      
+      
+         </footer>
+      
 </body>
 
 </html>

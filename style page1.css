@@ -8,7 +8,8 @@
    
 header{
     display: flex;
-    width: 100%;
+    margin: 0% auto;
+    width: 85%;
     justify-content: center;
     height: 100px;
     align-items: center;
@@ -16,14 +17,50 @@ header{
     
 }
 .nav{
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 60px;
+    position: relative;
 }
+
 .links{
     display: flex;
     gap: 20px;
+    align-items: center;
+}
+.links a{
+    padding: 1rem;
+    display: block;
+}
+.links a:hover{
+    border-radius: 8px;
+background-color: #b5b1b1;
+}
+.menu-btn{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+.menu-btn .bar{
+    height: 4px;
+    width: 100%;
+    background-color: #686AA1;
+    border-radius: 10px;
+}
+@media (max-width: 760px) {
+    .menu-btn {
+
+        display: flex;
+    }
+    .links{
+        display: none;
+    }
 }
 .title-logo{
     font-size: 2rem;
@@ -36,19 +73,21 @@ a{
     color: black;
 }
 .partie-détaille{
-    width: 90%;
+    width: 85%;
     margin: 0% auto;
     display: flex;
 }
+.heroImage{
+    width: 50%;
+    height: 100%;
+}
 .nom-produit{
-    width: 85%;
-    margin-top: 120px;
+    width: 50%;
 }
 .titre{
     margin: auto;
     width: 85%;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
 }
 .titre p{
@@ -59,10 +98,14 @@ a{
 .titre span{
     font-size: xx-large;
 }
+.botunesG{
+    width: 100%;
+    height: 50%;
+}
 .quantity {
     width: 30%;
-    margin-top: 100px;
-    margin-left: 100px;
+    margin-top: 2rem;
+    margin-left: 2rem;
     background-color: rgba(41, 97, 97, 0.094);
     padding: 13px;
     border-radius: 30px;
@@ -71,7 +114,8 @@ a{
     align-items: center;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
-.quantity span:nth-child(1), span:nth-child(3) {
+
+.quantity span:nth-child(1), .quantity span:nth-child(3) {
     font-size: x-large;
     padding: 10px;
     border-radius: 50%;
@@ -83,60 +127,61 @@ a{
     font-size: large;
 }
 .rating{
-    padding: 40px;
-    margin-left: 60px;
+    padding: 1rem;
+    margin-left: 1rem;
     
-}
-.heroImage{
-    width: 800px;
-    height: 550px;
 }
 
 .button1{
-    width: 200px;
+    width: 50%;
     height: 39px;
     border-radius: 40px;
     border: 3px solid;
-    margin-left: 100px;
+    margin-left: 2rem;
     background-color: rgba(201, 115, 131, 0.514);
     
 }
 
 .descripton {
-    margin: 5px 75px ;
+    width: 85%;
+    margin: 2% auto ;
 }
 .descripton h2{
     font-size: xx-large;
-
+    margin: 1% auto;
 }
 
 .descripton p {
     word-break: break-all;
-    width: 90%;
+    width: 100%;
     font-size: larger;
-    padding : 15px 0px 10px 15px;
+    /* padding : 15px 0px 0px 15px;  */
 }
 
 .reviews {
-    /* border: 2px solid red; */
-    padding: 30px 0px;
-    margin: 30px 75px;
+    width: 85%;
+    padding: 15px 0px;
+    margin: 2% auto;
 }
 .reviews div {
     display: flex;
     margin: 10px;
-    /* border: 2px solid red; */
 }
 
 .profile {
-    display: flex;
-    flex-direction: column;
+width: 100%;
+height: 100%;
+flex-direction: column;
+}
+.ProfCommit{
+    width: 100%;
+    height: 100%;
 }
 .profile img {
-    width: 200px;
-    height: 150px;
+    width: 50%;
+    height: 60%;
     border-radius: 50%;
-    margin-top: 20px;
+    margin-top: 20% auto;
 }
 .profile span{
     text-align: center;
@@ -144,7 +189,7 @@ a{
 }
 .reviews p {
     margin: auto;
-    padding: 0px 120px 0px 15px;
+    padding: 0px 0px 0px 15px;
     font-size: larger;
     letter-spacing: 0vh;
     line-height: 28px;
@@ -154,13 +199,8 @@ a{
 }
 .footer-content{
     margin: 0% auto;
-    width: 1248px;
-    height: 159px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    
+    width: 85%;
+    height: 10rem;
     border-top: 1px solid #000;
     position: relative;
 }
@@ -170,6 +210,22 @@ a{
     display: flex;
     justify-content: space-between;
 }
+@media (max-width: 580px) {
+    .box-content{
+        display: block;
+    } 
+    .user-contact{
+        display: block !important;  
+        width: 100% !important;
+    }
+    .user-contact p{
+        padding-bottom: 2rem;
+        
+    }
+    .svg-arrow{
+        float: right;
+    }
+}
 .user-contact{
     width: 50%;
     height: 100%;
@@ -178,25 +234,38 @@ a{
     align-items: center;
 }
 
-.footer-content ul{
-    margin-top: 40px;
-    list-style: none;
-    display: flex;   
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #444;
-    height: 5vh;
-    margin-bottom: 20px;
 
-}
+
 .icones{
-    width:156px ;
+    width: 156px;
+    float: right;
     height: 19px;
+    margin-top: 1rem;
     display: flex;
     align-self: self-end;
     justify-content: space-between;
-    position: absolute;
-    bottom: 30px;
-    right: 0;
+}
+@media (max-width: 600px) {
+    .partie-détaille{
+        display: block;
+    }
+    .heroImage{
+        width: 100%;
+        
+    }
+    .nom-produit{
+        width: 100%;
+    }
+    .ProfCommit{
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .botunesG{
+        display: flex;
+       
+    }
+    .quantity{
+        margin-top: 0rem;
+    }
+ 
 }

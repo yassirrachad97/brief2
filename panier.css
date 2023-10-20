@@ -8,7 +8,8 @@
    
 header{
     display: flex;
-    width: 100%;
+    margin: 0% auto;
+    width: 85%;
     justify-content: center;
     height: 100px;
     align-items: center;
@@ -16,13 +17,50 @@ header{
     
 }
 .nav{
-    width: 85%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
+
 .links{
     display: flex;
     gap: 20px;
+    align-items: center;
+}
+.links a{
+    padding: 1rem;
+    display: block;
+}
+.links a:hover{
+    border-radius: 8px;
+background-color: #b5b1b1;
+}
+.menu-btn{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+.menu-btn .bar{
+    height: 4px;
+    width: 100%;
+    background-color: #686AA1;
+    border-radius: 10px;
+}
+@media (max-width: 760px) {
+    .menu-btn {
+
+        display: flex;
+    }
+    .links{
+        display: none;
+    }
 }
 .title-logo{
     font-size: 2rem;
@@ -35,9 +73,10 @@ a{
     color: black;
 }
 .nomPanier{
-    width: 80%;
+    width: 100%;
     height: 60px;
-    margin: 10px 40px 10px 140px;
+    justify-content: center;
+    margin: 0% auto;
 }
 .nomPanier h1{
     width: 100%;
@@ -46,27 +85,35 @@ a{
     display: flex;
     justify-content: center;
 }
-.produit{
-    width: 80%;
-    height: 400px;
-    display: flex;
-    margin: 60px 40px 60px 270px;
+.lesProduits{
+    width: 85%;
+    height: 100%;
+    margin: 0% auto;
     
+}
+.produit{
+    width: 100%;
+    display: flex;
+    margin: 2% auto;
+    
+}
+.img{
+    width: 50%;
+    height: 100%;
+    gap: 20%;
+    height: 100%;
 }
 
 .carats{
-    width: 70%;
-    height: 100%;
-    display: flex;
+    width: 50%;
+    height: 20rem;
 
    
 }
 .carats .nom{
-    width: 30%;
+    width: 100%;
     height: 20%;
-    margin: 100px 19px 0px 60px;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
 
 }
@@ -74,22 +121,20 @@ a{
     color: #A18A68;
 }
 .quantité{
-    width: 60px;
-    height: 10%; 
-    margin: 240px 19px 0px 60px; 
+    width: 100%;
+    height: 10%;  
     font-size: x-large;
     font-weight: bold;
 }
 .quantité span:nth-child(2){
     border:  #000;
-    background-color: #444;
+    background-color: #dbd8d8;
     font-size: xx-large;
 
 }
 .total{
-    width: 30%;
+    width: 100%;
     height: 20%; 
-    margin: 316px 10px 0px -405px; 
     display: flex;
     justify-content: space-between;
 }
@@ -103,16 +148,15 @@ a{
     font-size: xx-large;
 }
 .achat{
-    width: 80%;
-    height: 200px;
-    margin: 27px 17px 45px 148px;
+    width: 100%;
+    margin: 0% auto;
 }
 .prixTotal{
-    width: 30%;
+    width: 100%;
     height: 40%;
     display: flex;
     justify-content: space-evenly;
-    margin: 17px 10px 10px 400px;
+    margin: 0% auto;
 }
 .prixTotal span:nth-child(1){
     font-size: xx-large;
@@ -126,11 +170,13 @@ a{
 
 }
 .button1{
-    width: 200px;
-    height: 39px;
+    width: 20%;
+    height: 10%;
     border-radius: 40px;
     border: 3px solid;
-    margin: 17px 10px 10px 490px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 40%;
     background-color: rgba(155, 148, 149, 0.514);
 }
 
@@ -138,12 +184,8 @@ a{
 
 .footer-content{
     margin: 0% auto;
-    width: 1248px;
-    height: 159px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
+    width: 85%;
+    height: 10rem;
     border-top: 1px solid #000;
     position: relative;
 }
@@ -153,6 +195,22 @@ a{
     display: flex;
     justify-content: space-between;
 }
+@media (max-width: 580px) {
+    .box-content{
+        display: block;
+    } 
+    .user-contact{
+        display: block !important;  
+        width: 100% !important;
+    }
+    .user-contact p{
+        padding-bottom: 2rem;
+        
+    }
+    .svg-arrow{
+        float: right;
+    }
+
 .user-contact{
     width: 50%;
     height: 100%;
@@ -160,26 +218,28 @@ a{
     justify-content: space-between;
     align-items: center;
 }
-
-.footer-content ul{
-    margin-top: 40px;
-    list-style: none;
-    display: flex;   
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #444;
-    height: 5vh;
-    margin-bottom: 20px;
-
 }
+
+
+
 .icones{
-    width:156px ;
+    width: 156px;
+    float: right;
     height: 19px;
+    margin-top: 1rem;
     display: flex;
     align-self: self-end;
     justify-content: space-between;
-    position: absolute;
-    bottom: 30px;
-    right: 0;
+}
+@media (max-width: 580px) {
+    .produit{
+        display: block;
+    }
+    .img{
+        width: 100%;
+    }
+    .carats{
+        width: 100%;
+        
+    }
 }
