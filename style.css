@@ -168,7 +168,7 @@ line-height: 2em;
     width: 80%;
     height: 100%;
     display: flex;
-    margin: 25% auto;
+    margin: 10% auto;
     flex-direction: column;
     justify-content: space-between;
     
@@ -185,11 +185,11 @@ line-height: 2em;
 
 }
 .partie2{
-margin-top: 40px;
+margin-top: 5%;
 }
 
 .descripton1{
-    margin-top: 40px;
+    margin-top: 5%;
 }
 .liste{
     margin-left: 20px;
@@ -200,15 +200,14 @@ margin-top: 40px;
     
 }
 .partie3{
-    margin-top: 40px;
+    margin-top: 10%;
 }
 .descripton2{
-    margin-top: 40px;
+    margin-top: 10%;
 }
 .footer-content{
     margin: 0% auto;
     width: 85%;
-    height: 10rem;
     border-top: 1px solid #000;
     position: relative;
 }
@@ -225,9 +224,10 @@ margin-top: 40px;
     .user-contact{
         display: block !important;  
         width: 100% !important;
+        margin: 0% auto;
     }
     .user-contact p{
-        padding-bottom: 2rem;
+         padding-bottom: 0.5rem; 
         
     }
     .svg-arrow{
@@ -242,10 +242,11 @@ margin-top: 40px;
     align-items: center;
 }
 .icones{
-    width: 156px;
+    width: 70%;
     float: right;
-    height: 19px;
-    margin-top: 1rem;
+    height: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
     display: flex;
     align-self: self-end;
     justify-content: space-between;
