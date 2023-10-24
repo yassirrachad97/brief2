@@ -53,7 +53,16 @@ background-color: #b5b1b1;
     background-color: #686AA1;
     border-radius: 10px;
 }
+#composants-menu{
+    display: none;
+
+}
 @media (max-width: 760px) {
+    header{
+        position: fixed;
+    background-color: white;
+    width: 100%;
+    }
     .menu-btn {
 
         display: flex;
@@ -61,7 +70,47 @@ background-color: #b5b1b1;
     .links{
         display: none;
     }
+    #composants-menu{
+    display: none;
+
 }
+    .menu-btn {
+
+        display: flex;
+    }
+    .links{
+        display: none;
+    }
+    #composants-menu{
+        width: 100%;
+        height: 70%;
+        z-index: 100;
+        position: fixed;
+        background-color: white;
+        margin-top: 6rem;
+        overflow:hidden;
+
+    }
+    #composants-menu p{
+        border: 1px solid black;
+        border-radius: 10px;
+        height: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10%;
+
+
+    }
+    
+}
+    .heroImage{
+        margin-top: 6rem;
+    }
+    .nom-produit{
+        margin-top: 6rem;
+    }
+    
 .title-logo{
     font-size: 2rem;
     color: #A18A68;
@@ -104,27 +153,28 @@ a{
     height: 50%;
 }
 .quantity {
-    width: 30%;
+    width: 40%;
     margin-top: 2rem;
-    margin-left: 2rem;
+    margin-left: 3rem;
     background-color: rgba(41, 97, 97, 0.094);
-    padding: 13px;
-    border-radius: 30px;
+    /* padding: 13px; */
+    /* border-radius: 30px; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
 }
 
 .quantity span:nth-child(1), .quantity span:nth-child(3) {
     font-size: x-large;
-    padding: 10px;
-    border-radius: 50%;
+    /* padding: 10px; */
+    /* border-radius: 50%; */
     font-weight: bold;
     background-color: rgba(62, 94, 78, 0.799);
 }
 .quantity span:nth-child(2){
-    height: 20px;
+    height: 30%;
+
     font-size: large;
 }
 .rating{
@@ -156,7 +206,7 @@ a{
     word-break: break-all;
     width: 100%;
     font-size: larger;
-    /* padding : 15px 0px 0px 15px;  */
+    
 }
 
 .reviews {
@@ -165,7 +215,7 @@ a{
     margin: 2% auto;
 }
 .reviews div {
-    display: flex;
+    display: block;
     margin: 10px;
 }
 
@@ -179,8 +229,8 @@ flex-direction: column;
     height: 100%;
 }
 .profile img {
-    width: 50%;
-    height: 60%;
+    width: 20%;
+    height: 20%;
     border-radius: 50%;
     margin-top: 20% auto;
 }
@@ -201,7 +251,6 @@ flex-direction: column;
 .footer-content{
     margin: 0% auto;
     width: 85%;
-    height: 10rem;
     border-top: 1px solid #000;
     position: relative;
 }
@@ -211,16 +260,17 @@ flex-direction: column;
     display: flex;
     justify-content: space-between;
 }
-@media (max-width: 580px) {
+@media (max-width: 600px) {
     .box-content{
         display: block;
     } 
     .user-contact{
         display: block !important;  
         width: 100% !important;
+        margin: 0% auto;
     }
     .user-contact p{
-        padding-bottom: 2rem;
+         padding-bottom: 0.5rem; 
         
     }
     .svg-arrow{
@@ -234,38 +284,13 @@ flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
-
-
 .icones{
-    width: 156px;
+    width: 70%;
     float: right;
-    height: 19px;
-    margin-top: 1rem;
+    height: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
     display: flex;
     align-self: self-end;
     justify-content: space-between;
-}
-@media (max-width: 600px) {
-    .partie-détaille{
-        display: block;
-    }
-    .heroImage{
-        width: 100%;
-        
-    }
-    .nom-produit{
-        width: 100%;
-    }
-    .ProfCommit{
-        flex-wrap: nowrap;
-        flex-direction: column;
-    }
-    .botunesG{
-        display: flex;
-       
-    }
-    .quantity{
-        margin-top: 0rem;
-    }
- 
 }

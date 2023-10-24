@@ -19,11 +19,12 @@
          <div class="logo">
             <span class="title-logo">You<span style="color: #686AA1;">Shop</span></span>
          </div>
-         <a href="#" class="menu-btn">
+         <a href="#" id="buttonMenu" class="menu-btn">
             <span class="bar"></span>
             <span class="bar"></span>
              <span class="bar"></span>
          </a>
+
          <div class="links">
             <a href="#">blog</a>
             <a href="#">shop</a>
@@ -39,7 +40,14 @@
 
    <main class="main">
 
-
+      <div id="composants-menu" style="display: none;">
+         <p><a href="#">blog</a></p>
+         <p><a href="index.html">shop</a></p>
+         <p><a href="#">our story</a></p>
+         <p><a href="#"><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></a></p>
+         <p><a href="page panier.html"><i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></a></p>
+         <p> <a href="#"><i class="fa-regular fa-user" style="color: #000000;"></i></a></p>        
+       </div>
        <article class="hero">
          <div class="content-hero">
             <p>
@@ -66,7 +74,10 @@
          </div>
          <div class="articles">
             <div class="produit">
-               <img src="images/1.png" alt="Lira-Earrings">
+               <img src="images/1.png" alt="Lira-Earrings" style="position: relative;">
+               <div class="add">
+                  <p>add</p>
+               </div>
                <div class="NomPrix">
                <p class="nom">Lira Earrings</p>
                <span class="prix">$20,00</span>
@@ -198,7 +209,7 @@
    </footer>
 
 
-
+<script src="index.js"></script>
 </body>
 
 </html>

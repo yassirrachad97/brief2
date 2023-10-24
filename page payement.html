@@ -19,14 +19,14 @@
            <div class="logo">
               <span class="title-logo">You<span style="color: #686AA1;">Shop</span></span>
            </div>
-           <a href="#" class="menu-btn">
+           <a href="#" id="buttonMenu" class="menu-btn">
               <span class="bar"></span>
               <span class="bar"></span>
                <span class="bar"></span>
            </a>
            <div class="links">
               <a href="#">blog</a>
-              <a href="#">shop</a>
+              <a href="index.html">shop</a>
               <a href="#">our story</a>
               <p>|</p>
               <a href="#"><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></a>
@@ -38,20 +38,27 @@
   
 
    <main>
-
+    <div id="composants-menu" style="display: none;">
+        <p><a href="#">blog</a></p>
+        <p><a href="index.html">shop</a></p>
+        <p><a href="#">our story</a></p>
+        <p><a href="#"><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></a></p>
+        <p><a href="page panier.html"><i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></a></p>
+        <p> <a href="#"><i class="fa-regular fa-user" style="color: #000000;"></i></a></p>        
+      </div>
     <div class="nomPanier">
         <h1>Payement</h1>
       </div>
 
    <div class="combinaison">
     <div class="livraison">
-        <form  > 
-            <input type="text" placeholder="Nom et Prenom">
-            <input type="text" placeholder="adresse">
-            <input type="number" placeholder="card number">
+        <form action="index.html" > 
+            <input type="text" placeholder="Nom et Prenom" required>
+            <input type="text" placeholder="adresse"required>
+            <input type="number" placeholder="card number" required>
+            <input type="number"placeholder="date experation" required>
             <div class="btn1">
-                <button>type carte</button>
-                <button>pays</button>
+                <button>pays</button>.
             </div>
         </form>
     </div>
@@ -102,7 +109,7 @@
    <div class="factureBtn">
    <div class="achtBTN">
     <div>
-        <button > <a href="#">Confermer</a> </button>
+        <button > <a href="index.html">Confermer</a> </button>
     </div>
    </div>
    <div class="FACTURE">
@@ -158,7 +165,7 @@
        </div>
     </div>
   </footer>
-
+  <script src="index.js"></script>
 </body>
 
 </html>

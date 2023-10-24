@@ -4,6 +4,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
    
 header{
     display: flex;
@@ -52,13 +53,43 @@ background-color: #b5b1b1;
     background-color: #686AA1;
     border-radius: 10px;
 }
+#composants-menu{
+    display: none;
+
+}
 @media (max-width: 760px) {
+    header{
+        position: fixed;
+    background-color: white;
+    width: 100%;
+    }
     .menu-btn {
 
         display: flex;
     }
     .links{
         display: none;
+    }
+    #composants-menu{
+        width: 100%;
+        height: 70%;
+        z-index: 100;
+        position: fixed;
+        background-color: white;
+        margin-top: 6rem;
+        overflow:hidden;
+
+    }
+    #composants-menu p{
+        border: 1px solid black;
+        border-radius: 10px;
+        height: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10%;
+
+
     }
 }
 .title-logo{
@@ -217,55 +248,10 @@ form input{
     font-size: xx-large;
     font-weight: bold;
 }
-.footer-content{
-    margin: 0% auto;
-    width: 85%;
-    height: 10rem;
-    border-top: 1px solid #000;
-    position: relative;
-}
-.box-content{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-@media (max-width: 580px) {
-    .box-content{
-        display: block;
-    } 
-    .user-contact{
-        display: block !important;  
-        width: 100% !important;
-    }
-    .user-contact p{
-        padding-bottom: 2rem;
-        
-    }
-    .svg-arrow{
-        float: right;
-    }
-}
-.user-contact{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.icones{
-    width: 156px;
-    float: right;
-    height: 19px;
-    margin-top: 1rem;
-    display: flex;
-    align-self: self-end;
-    justify-content: space-between;
-}
 @media (max-width: 760px){
     .combinaison{
         display: block;
+        margin-top: 6rem;
     }
     .livraison{
         width: 100%;
@@ -293,5 +279,53 @@ form input{
         font-size: large;
     }
 }
+
+.footer-content{
+    margin: 0% auto;
+    width: 85%;
+    border-top: 1px solid #000;
+    position: relative;
+}
+.box-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width: 600px) {
+    .box-content{
+        display: block;
+    } 
+    .user-contact{
+        display: block !important;  
+        width: 100% !important;
+        margin: 0% auto;
+    }
+    .user-contact p{
+         padding-bottom: 0.5rem; 
+        
+    }
+    .svg-arrow{
+        float: right;
+    }
+}
+.user-contact{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icones{
+    width: 70%;
+    float: right;
+    height: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-self: self-end;
+    justify-content: space-between;
+}
+
 
 
