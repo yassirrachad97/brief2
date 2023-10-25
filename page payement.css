@@ -126,7 +126,6 @@ a{
 .livraison{
  
     width: 50%;
-    height: 100%;
     margin: 0% auto; 
    
 }
@@ -137,7 +136,7 @@ form{
     flex-direction: column;
     margin-top: 10%;
     gap: 0.75rem;
-    line-height: 10rem;
+    line-height: 1.6;
     
 
 }
@@ -149,6 +148,15 @@ form input{
 }
 .submit{
     width: 50%;
+}
+.input{
+    width: 100%;
+    margin: 0% auto;
+}
+.formValidation{
+    color: red;
+    padding-left: 5px;
+    display: none;
 }
 
 

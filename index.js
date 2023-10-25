@@ -4,6 +4,31 @@ var qteProduct = document.querySelectorAll(".nombreProduit");
  var price = document.querySelectorAll(".carats p");
  var totalprice = document.querySelectorAll(".total_prix_prod");
  var totalgeneral = document.getElementById("total_general");
+ const form = document.getElementById("form");
+ const inputs= document.querySelectorAll("input");
+ const submit= document.getElementsByClassName("submit");
+ const Parag= document.querySelectorAll(".formValidation");
+ var delet1= document.getElementById("delet1")
+ var delet2= document.getElementById("delet2")
+ var delet3= document.getElementById("delet3")
+ 
+ inputs.forEach((item , index)=>{
+    item.addEventListener("input",function (event){ 
+        const namevalue= nomm.value;
+            const words = namevalue.split(' ');
+        inputs[index].style.border = "1px solid red";
+            Parag[index].style.display="block";
+        if(event.target === nomm){
+           if(!nomm(event.target.value)){
+            
+           } 
+         
+        }
+        else{  
+        }
+       })
+       
+ })
 btn_menu.addEventListener("click",()=>{
     if(menu.style.display==="block") menu.style.display="none";
     else if(menu.style.display==="none") menu.style.display="block";
@@ -47,7 +72,18 @@ btn_menu.addEventListener("click",()=>{
         }
         totalgeneral.innerHTML = total+".00$";
     }
-   
-function validationEmail(email)
-{}
-
+    
+// function validationEmail(email)
+// {}
+// form.addEventListener("submit",submitBtn);
+// function submitBtn(e){
+//     e.preventDefault();
+//     inputs.forEach(input=>{
+//        if(input.value.trim() === ""){
+//          input.nextElementSibling.textContent=`${input.dataset.type} is required`;
+//        }else{
+//         input.nextElementSibling.textContent="";
+        
+//        } 
+//     })
+// }
